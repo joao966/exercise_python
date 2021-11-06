@@ -5,8 +5,19 @@
 #     print(prop)
 
 # exercise 02
-def sum(a, b):
-    return a + b
+# def sum(a, b):
+#     return a + b
 
 
-print(sum(2, 2))
+# print(sum(2, 2))
+
+
+# exercise_03
+def return_bigger(a, b):
+    if a > b:
+        print("a maior que b")
+    else:
+        print("b maior que a")
+
+
+return_bigger(0, 1)
