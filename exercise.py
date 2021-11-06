@@ -24,10 +24,21 @@
 
 
 # exercise_04
-def medium(array):
-    sum = int(array[0]) + int(array[1]) + int(array[2])
-    result = sum / len(array)
-    print(result)
+# def medium(array):
+#     sum = int(array[0]) + int(array[1]) + int(array[2])
+#     result = sum / len(array)
+#     print(result)
 
 
-medium([10, 8, 5])
+# medium([10, 8, 5])
+
+# exercise_05
+registers = [
+    {"name": "João", "idade": 25},
+    {"name": "Regina", "idade": 55},
+    {"name": "Ignês", "idade": 80},
+    {"name": "Hércules", "idade": 5},
+]
+
+for cur in registers:
+    print(cur)
