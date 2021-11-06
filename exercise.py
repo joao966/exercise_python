@@ -33,12 +33,24 @@
 # medium([10, 8, 5])
 
 # exercise_05
+# registers = [
+#     {"name": "João", "idade": 25},
+#     {"name": "Regina", "idade": 55},
+#     {"name": "Ignês", "idade": 80},
+#     {"name": "Hércules", "idade": 5},
+# ]
+
+# for cur in registers:
+#     print(cur)
+
+# exercise_06
 registers = [
-    {"name": "João", "idade": 25},
-    {"name": "Regina", "idade": 55},
-    {"name": "Ignês", "idade": 80},
-    {"name": "Hércules", "idade": 5},
+    {"name": "João", "stacks": ["JavaScript", "Python"]},
+    {"name": "Regina", "stacks": ["HTML", "CSS"]},
+    {"name": "Ignês", "stacks": ["React", "Redux"]},
+    {"name": "Hércules", "stacks": ["MongoDB", "MySQL"]},
 ]
 
 for cur in registers:
-    print(cur)
+    for sub_key in cur["stacks"]:
+        print(sub_key)
