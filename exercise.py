@@ -44,13 +44,20 @@
 #     print(cur)
 
 # exercise_06
-registers = [
-    {"name": "João", "stacks": ["JavaScript", "Python"]},
-    {"name": "Regina", "stacks": ["HTML", "CSS"]},
-    {"name": "Ignês", "stacks": ["React", "Redux"]},
-    {"name": "Hércules", "stacks": ["MongoDB", "MySQL"]},
-]
+# registers = [
+#     {"name": "João", "stacks": ["JavaScript", "Python"]},
+#     {"name": "Regina", "stacks": ["HTML", "CSS"]},
+#     {"name": "Ignês", "stacks": ["React", "Redux"]},
+#     {"name": "Hércules", "stacks": ["MongoDB", "MySQL"]},
+# ]
 
-for cur in registers:
-    for sub_key in cur["stacks"]:
-        print(sub_key)
+# for cur in registers:
+#     for sub_key in cur["stacks"]:
+#         print(sub_key)
+
+
+# exercise_07
+# objeto = {"name": "Hércules", "stacks": "MongoDB"}
+
+# for key, index in objeto.items():
+#     print(key, index)
