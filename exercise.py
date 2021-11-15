@@ -70,30 +70,38 @@
 # print(f"Soma = {sum(1,1)}")
 
 # exercise_09
-
-register = [
-    {
-        "name": "João",
-        "familia": {
-            "cla": "Oliveira",
-            "ascendencia": ["Regina", "Inês"],
-        },
-    },
-    {
-        "name": "Regina",
-        "familia": {
-            "cla": "Oliveira",
-            "ascendencia": ["Inês", "Acácia"],
-        },
-    },
-]
-
-
-def concat(par):
-
-    for curChave in par:
-        for subCur in curChave:
-            print(subCur)
+# register = [
+#     {
+#         "name": "João",
+#         "familia": {
+#             "cla": "Oliveira",
+#             "ascendencia": ["Regina", "Inês"],
+#         },
+#     },
+#     {
+#         "name": "Regina",
+#         "familia": {
+#             "cla": "Oliveira",
+#             "ascendencia": ["Inês", "Acácia"],
+#         },
+#     },
+# ]
 
 
-concat(register)
+# def concat(par):
+
+#     for curChave in par:
+#         for subCur in curChave:
+#             print(subCur)
+
+
+# concat(register)
+
+# exercise10
+import json
+
+with open("pokemons.json") as file:
+    pokemons = json.load(file)
+    for cur in pokemons:
+        if cur["speed"] > 159:
+            print(cur["speed"])
