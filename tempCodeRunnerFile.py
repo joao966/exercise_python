@@ -1,4 +1,4 @@
-objeto = {"nome": "João", "idade": "25", "pais": "Brasil"}
+objeto = {"name": "Hércules", "stacks": "MongoDB"}
 
-# for prop in objeto.values():
-#     print(prop)
+for key, index in objeto.items():
+    print(key, index)

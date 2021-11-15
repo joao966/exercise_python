@@ -44,13 +44,64 @@
 #     print(cur)
 
 # exercise_06
-registers = [
-    {"name": "João", "stacks": ["JavaScript", "Python"]},
-    {"name": "Regina", "stacks": ["HTML", "CSS"]},
-    {"name": "Ignês", "stacks": ["React", "Redux"]},
-    {"name": "Hércules", "stacks": ["MongoDB", "MySQL"]},
-]
+# registers = [
+#     {"name": "João", "stacks": ["JavaScript", "Python"]},
+#     {"name": "Regina", "stacks": ["HTML", "CSS"]},
+#     {"name": "Ignês", "stacks": ["React", "Redux"]},
+#     {"name": "Hércules", "stacks": ["MongoDB", "MySQL"]},
+# ]
 
-for cur in registers:
-    for sub_key in cur["stacks"]:
-        print(sub_key)
+# for cur in registers:
+#     for sub_key in cur["stacks"]:
+#         print(sub_key)
+
+
+# exercise_07
+# objeto = {"name": "Hércules", "stacks": "MongoDB"}
+
+# for key, index in objeto.items():
+#     print(key, index)
+
+# exercise_08
+# def sum(a, b):
+#     return a + b
+
+
+# print(f"Soma = {sum(1,1)}")
+
+# exercise_09
+# register = [
+#     {
+#         "name": "João",
+#         "familia": {
+#             "cla": "Oliveira",
+#             "ascendencia": ["Regina", "Inês"],
+#         },
+#     },
+#     {
+#         "name": "Regina",
+#         "familia": {
+#             "cla": "Oliveira",
+#             "ascendencia": ["Inês", "Acácia"],
+#         },
+#     },
+# ]
+
+
+# def concat(par):
+
+#     for curChave in par:
+#         for subCur in curChave:
+#             print(subCur)
+
+
+# concat(register)
+
+# exercise10
+import json
+
+with open("pokemons.json") as file:
+    pokemons = json.load(file)
+    for cur in pokemons:
+        if cur["speed"] > 159:
+            print(cur["speed"])
