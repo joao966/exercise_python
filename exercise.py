@@ -61,3 +61,39 @@
 
 # for key, index in objeto.items():
 #     print(key, index)
+
+# exercise_08
+# def sum(a, b):
+#     return a + b
+
+
+# print(f"Soma = {sum(1,1)}")
+
+# exercise_09
+
+register = [
+    {
+        "name": "João",
+        "familia": {
+            "cla": "Oliveira",
+            "ascendencia": ["Regina", "Inês"],
+        },
+    },
+    {
+        "name": "Regina",
+        "familia": {
+            "cla": "Oliveira",
+            "ascendencia": ["Inês", "Acácia"],
+        },
+    },
+]
+
+
+def concat(par):
+
+    for curChave in par:
+        for subCur in curChave:
+            print(subCur)
+
+
+concat(register)
